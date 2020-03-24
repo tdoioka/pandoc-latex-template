@@ -974,6 +974,11 @@ $endfor$ %changelog%
 \newpage
 $endif$ %changelog%
 
+% To reflect figure/table/listing title number prefix setting by pandoc-crossref.
+$if(figureTitle)$\renewcommand*\figurename{$figureTitle$}$endif$
+$if(tableTitle)$\renewcommand*\tablename{$tableTitle$}$endif$
+$if(listingTitle)$\renewcommand*\lstlistingname{$listingTitle$}$endif$
+
 $for(include-before)$
 $include-before$
 
