@@ -686,6 +686,17 @@ $endif$
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 
+$if(indent)$
+$if(indentfirst)$
+\usepackage{indentfirst}
+$endif$
+$if(parindent)$
+\parindent = $parindent$
+$else$
+\parindent = 1em
+$endif$
+$endif$
+
 %
 %
 % Listings
