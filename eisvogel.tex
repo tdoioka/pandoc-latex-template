@@ -934,6 +934,21 @@ $else$
 \textsf{$date$}
 $endif$
 \end{flushleft}
+
+$if(stampfield)$
+\begin{flushright}
+  \begin{table}[bhtp]
+    \begin{tabularx}{\linewidth}{|p{$stampfield$}|p{$stampfield$}|p{$stampfield$}|}
+      \hline
+      & & \\
+      \hline
+      & & \rule[0em]{0em}{3.2em} \\
+      \hline
+    \end{tabularx}
+  \end{table}
+\end{flushright}
+$endif$
+
 \end{titlepage}
 \restoregeometry
 $endif$
